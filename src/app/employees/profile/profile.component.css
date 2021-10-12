@@ -1,0 +1,51 @@
+#E-profile , #Dep-profile{
+    width: 100%;
+    padding-top: 100px;
+}
+ .container{
+    border: #212F3C 5px solid;
+    border-radius: 10px;
+    box-shadow: #AEB6BF 10px 10px;
+    color: black;
+    position: relative;
+    background-color: white;
+    padding: 30px 30px;
+   
+}
+h6, h3{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: 	black;
+}
+#Dep-profile h3{
+    color: #212F3C;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h2{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: 	#212F3C;
+}
+.E-data{
+    padding: 20px 10px;
+}
+.edit{
+    background-color: green;
+    color: white;
+    margin-top: 20px;
+
+}
+.delete{
+    background-color: red;
+    color: white;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.listEmp a{
+    color: black;
+    padding-bottom: 30px;
+}
+.listMang a{
+    color: black;
+    padding-bottom: 30px;
+    font-size: 20px;
+    display: inline;
+}

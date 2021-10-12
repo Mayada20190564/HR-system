@@ -1,0 +1,32 @@
+<div id="listEmp">
+  <div class="container-fluid">
+    <div class=" row justify-content-between head">
+      <div class="col-md-4">
+        <h2>Managers</h2>
+      </div>
+      <div class="col-md-3">
+        <a routerLink="/create-m" class="btn">Add new Manager</a>
+      </div>   
+    </div>
+  </div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">image</th>
+        <th scope="col">Name</th>
+        <th scope="col">Departement</th>
+        <th scope="col">job tittle</th>
+        <th scope="col">manager profile</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let mangers of AllManagers">
+        <td> <img [src]="mangers.imgUrl" class="img-fluid rounded-circle"></td>
+        <td>{{mangers.name}}</td>
+        <td>{{mangers.departement}}</td>
+        <td>{{mangers.jobTittle}}</td>
+        <td><a routerLink="/profile-m/{{mangers.id}}">Following</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

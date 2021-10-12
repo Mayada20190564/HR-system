@@ -1,0 +1,34 @@
+<div id="allDeps">
+    <div class="container-fluid">
+        <div class="row justify-content-between mt-3 head">
+            <div class="col-md-4">
+                <h2>Departements</h2>
+            </div> 
+            <div class="col-md-3">
+                <div class="form-group">
+                    <input placeholder="Add New Departement" class="form-control" type="text"
+                    ngModel #DepName = "ngModel" required minlength="2"
+                    [(ngModel)]="NewDep.name"(keyup.enter)="addDep(DepName)">
+                    <div *ngIf="DepName.touched && DepName.invalid" class="alert alert-danger">
+                        please enter departement name
+                        <div *ngFor ="let depNames of AllDeps">
+                            <div *ngIf="depNames.name == DepName.value">
+                                departement already exist
+                            </div>
+                        </div>
+                    </div>      
+                </div>
+            </div>   
+        </div>
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-3 depName" *ngFor="let dep of AllDeps">
+                    <a routerLink="/profile-dep/{{dep.id}}">{{dep.name}}</a>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+
+</div>

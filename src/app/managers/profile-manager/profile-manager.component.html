@@ -1,0 +1,34 @@
+<div id="E-profile">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10">
+        <h2 class="text-center">Profile Page</h2>
+      </div>
+      <div class="col-md-2">
+        <div class="imgProfile">
+          <img [src]="mang.imgUrl" class="img-fluid rounded-circle">
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-between">
+      <div class="col-md-8 E-data">
+        <h6>name: {{mang.name}}</h6>
+        <h6>age: {{mang.age}}</h6>
+        <h6>mobile number: {{mang.phoneNumber}}</h6>
+        <h6>e-mail: {{mang.email}}</h6>
+        <h6>job tittle: {{mang.jobTittle}}</h6>
+        <h6>departement: {{mang.departement}}</h6>
+        <h6>salary: {{mang.salary}}</h6>
+        <a class="btn edit" routerLink="/update-m/{{id}}">Edit  <span><i class="far fa-edit"></i></span></a>
+        <button class="btn delete" (click)="delete()">Delete <span><i class="far fa-trash-alt"></i></span></button>
+      </div>
+      <div class="col-md-3">
+        <h4>{{mang.departement}} employees:</h4>
+        <div *ngFor="let emps of DepEmp" class="listEmp">
+          <a *ngIf="mang.departement == emps.departement" routerLink="/profile-e/{{emps.id}}">{{emps.name}}</a>
+        </div>
+      </div>
+    </div>
+   
+  </div>
+</div>

@@ -1,0 +1,31 @@
+<div id="E-profile">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-10">
+            <h2 class="text-center">Profile Page</h2>
+          </div>
+          <div class="col-md-2">
+            <div class="imgProfile">
+                <img [src]="emp.imgUrl" class="img-fluid rounded-circle">
+              </div>
+          </div>
+      </div>
+      <div class="row">
+        <div class="col-md-9 E-data">
+            <h6>name: {{emp.name}}</h6>
+            <h6>age: {{emp.age}}</h6>
+            <h6>mobile number: {{emp.phoneNumber}}</h6>
+            <h6>e-mail: {{emp.email}}</h6>
+            <h6>job tittle: {{emp.jobTittle}}</h6>
+            <h6>departement: {{emp.departement}}</h6>
+            <h6>salary: {{emp.salary}}</h6>
+          </div>
+      </div>
+    <div class="row">
+      <div class="col-md-12">
+        <a class="btn edit" routerLink="/update-e/{{id}}">Edit <span><i class="far fa-edit"></i></span></a>
+        <button class="btn delete" (click)="delete()">Delete <span><i class="far fa-trash-alt"></i></span></button>
+      </div>
+    </div>  
+  </div>
+</div>

@@ -1,0 +1,74 @@
+<div id="addEmp">
+    <h2 class="text-center">Update Employee Data</h2>
+  <div class="container">
+    <div class="addCard">
+      <div class="card-body">
+        <div class="form-group">
+          <label>Name </label>
+          <input class="form-control" type="text" placeholder="name" [(ngModel)]="model.name" ngModel #eName='ngModel'
+            required>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="form-group">
+              <label>Age:</label>
+              <input class="form-control" type="number" placeholder="age" [(ngModel)]="model.age" ngModel #age='ngModel'
+                required>
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <label>phone number </label>
+              <input class="form-control" type="tel" placeholder="phone number" [(ngModel)]="model.phoneNumber" ngModel
+                #phone='ngModel' required [pattern]=mobNumberPattern>
+              <div *ngIf=" phone.touched && phone.invalid">
+                <div *ngIf="phone.errors.pattern">Mobile number is not vallid</div>
+                <div *ngIf="phone.errors.required">plaese enter your mobile number</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>E-mail:</label>
+          <input class="form-control" type="email" placeholder="email" [(ngModel)]="model.email" ngModel #mail='ngModel'
+            required [pattern]="emailPattern" />
+          <div *ngIf=" mail.touched && mail.invalid">
+            <div *ngIf="mail.errors.pattern">please enter valid mail</div>
+            <div *ngIf="mail.errors.required">plaese enter your mail</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>job tittle </label>
+          <input class="form-control" type="text" placeholder="job tittle" [(ngModel)]="model.jobTittle" ngModel
+            #job='ngModel' required>
+        </div>
+        <div class="form-group">
+          <label>Department </label>
+          <input class="form-control" type="text" placeholder="departement name" [(ngModel)]="model.departement" ngModel
+            #dep='ngModel' required>
+        </div>
+        <div class="form-group">
+          <label>salary</label>
+          <input class="form-control" type="number" placeholder="salary" [(ngModel)]="model.salary" ngModel
+            #salary='ngModel' required>
+        </div>
+        <div class="form-group">
+          <label>photo</label>
+          <input class="form-control" type="url" placeholder="photo" [(ngModel)]="model.imgUrl" ngModel #img='ngModel'
+            required [pattern]="urlPattern">
+          <div *ngIf=" img.touched && img.invalid">
+            <div *ngIf="img.errors.pattern">please enter valid img</div>
+            <div *ngIf="img.errors.required">plaese enter your img</div>
+          </div>
+        </div>
+        <div
+          *ngIf="dep.invalid || img.invalid || salary.invalid || mail.invalid || phone.invalid || eName.invalid || job.invalid">
+          plaese enyer all data
+        </div>
+        <div>
+          <button (click)="update(dep,img,salary,mail,phone,eName,job)" class="btn">submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

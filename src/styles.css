@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+/* body{
+    background-color: #454545;
+} */
+.navbar{
+    background-color: white;
+    color: black;
+}
+.notFound{
+    width: 100%;
+    height: 100vh;
+    background-color: dimgrey;
+    color: white;
+}
+.notFound .caption{
+    position: fixed;
+    top: 50%;
+    left: 40%;
+    margin: auto;
+    color: white;
+    width: 50%;
+    height: 30%;
+}
+.notFound .caption i{
+font-size: 40px;
+margin: 0px 10px;
+}

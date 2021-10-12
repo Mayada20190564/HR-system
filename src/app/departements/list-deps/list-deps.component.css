@@ -1,0 +1,31 @@
+#allDeps{
+    padding-top: 90px;
+   
+}
+#allDeps a{
+color: teal;
+font-size: 20px;
+}
+.head{
+    background-color: #34495E;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: white;
+}
+.depName{
+    padding-bottom: 50px;
+    border: teal 2px solid;
+    border-radius: 10px;
+    box-shadow: gray 8px 8px;
+    margin: 20px 10px;
+}
+#allDeps h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:white;
+}
+.line{
+    width: 60%;
+    height: 1px;
+    background-color: teal;
+}
+
