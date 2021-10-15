@@ -1,0 +1,164 @@
+{
+  "employees": [
+    {
+      "imgUrl": "https://image.shutterstock.com/image-photo/head-shot-portrait-close-smiling-600w-1714666150.jpg",
+      "name": "Ahmed Mohamed",
+      "age": 30,
+      "phoneNumber": "01157353186",
+      "email": "ahmed@gmail",
+      "departement": "sales",
+      "jobTittle": "accountant",
+      "salary": 4000,
+      "id": 7
+    },
+    {
+      "imgUrl": "https://image.shutterstock.com/z/stock-photo-handsome-man-portrait-1266937855.jpg",
+      "name": "Mohamed Ahmed",
+      "age": 32,
+      "phoneNumber": "01157353186",
+      "email": "mohamed@gmail",
+      "departement": "sales",
+      "salary": 5000,
+      "jobTittle": "Sales Representative",
+      "id": 8
+    },
+    {
+      "imgUrl": "https://icon-library.com/images/person-image-icon/person-image-icon-7.jpg",
+      "name": "Noha Mohamed",
+      "age": 33,
+      "phoneNumber": "01157353186",
+      "email": "noha@gmail",
+      "jobTittle": "accountant",
+      "departement": "sales",
+      "salary": 4000,
+      "id": 9
+    },
+    {
+      "imgUrl": "https://image.shutterstock.com/image-photo/head-shot-african-selfassured-executive-600w-1770074666.jpg",
+      "name": "Ibraheem Mohamed",
+      "age": 35,
+      "phoneNumber": "01157353186",
+      "email": "ibrahem@gmail",
+      "jobTittle": "Sales Supervisor",
+      "departement": "sales",
+      "salary": 6000,
+      "id": 10
+    },
+    {
+      "imgUrl": "https://image.shutterstock.com/image-photo/profile-picture-smiling-millennial-asian-600w-1836020740.jpg",
+      "name": "Asmaa Ali",
+      "age": 32,
+      "phoneNumber": "01157353186",
+      "email": "asmaa@gmail",
+      "jobTittle": "District Sales-Manager",
+      "departement": "sales",
+      "salary": 4200,
+      "id": 11
+    },
+    {
+      "imgUrl": "https://image.shutterstock.com/image-photo/head-shot-african-selfassured-executive-600w-1770074666.jpg",
+      "name": "Alaa Ayman",
+      "age": 35,
+      "phoneNumber": "01157353186",
+      "email": "alaa@gmail",
+      "jobTittle": "Vice President of -Sales",
+      "departement": "sales",
+      "salary": 5500,
+      "id": 12
+    },
+    {
+      "imgUrl": "https://image.shutterstock.com/image-photo/head-shot-african-selfassured-executive-600w-1770074666.jpg",
+      "name": "Ahmed Mohamed",
+      "age": 34,
+      "phoneNumber": "0115735318",
+      "email": "ahmed@gmail",
+      "jobTittle": "Marketing Specialist",
+      "departement": "marketing",
+      "salary": 4000,
+      "id": 13
+    },
+    {
+      "imgUrl": "https://icon-library.com/images/person-image-icon/person-image-icon-7.jpg",
+      "name": "Ahmed Ayman",
+      "age": 29,
+      "phoneNumber": "0115735318",
+      "email": "ahmed@gmail",
+      "jobTittle": "Marketing Manager",
+      "departement": "marketing",
+      "salary": 4500,
+      "id": 14
+    },
+    {
+      "imgUrl": "https://icon-library.com/images/person-image-icon/person-image-icon-7.jpg",
+      "name": "Noha Ahmed",
+      "age": 26,
+      "phoneNumber": "0115735318",
+      "email": "noha@gmaill",
+      "jobTittle": "Public Relations Manager",
+      "departement": "marketing",
+      "salary": 5000,
+      "id": 15
+    },
+    {
+      "imgUrl": "https://icon-library.com/images/person-image-icon/person-image-icon-7.jpg",
+      "phoneNumber": "0110000000",
+      "name": "Sara Alaa",
+      "age": 25,
+      "email": "sara@gmail",
+      "jobTittle": "Social Marketing",
+      "departement": "marketing",
+      "salary": 4200,
+      "id": 16
+    }
+  ],
+  "managers": [
+    {
+      "imgUrl": "https://image.shutterstock.com/image-photo/smiling-african-american-millennial-businessman-600w-1437938108.jpg",
+      "name": "Adel Mohamed",
+      "age": 40,
+      "phoneNumber": "01157353186",
+      "email": "adel@gmail",
+      "jobTittle": "sales Manager",
+      "departement": "sales",
+      "salary": 6000,
+      "id": 1
+    },
+    {
+      "imgUrl": "https://image.shutterstock.com/image-photo/handsome-man-portrait-600w-1266937855.jpg",
+      "name": "Osama Adel",
+      "age": 22,
+      "phoneNumber": "01157353186",
+      "email": "osama@gmail",
+      "jobTittle": " marketing manager",
+      "departement": "marketing",
+      "salary": 5000,
+      "id": 2
+    }
+  ],
+  "departements": [
+    {
+      "name": "HR",
+      "id": 1
+    },
+    {
+      "name": "sales",
+      "id": 2
+    },
+    {
+      "name": "marketing",
+      "id": 3
+    },
+    {
+      "name": "productivity",
+      "id": 5
+    },
+    {
+      "name": "services",
+      "id": 6
+    },
+    {
+      "name": "finance",
+      "id": 7
+    }
+  ]
+}
